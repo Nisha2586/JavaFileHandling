@@ -1,0 +1,37 @@
+package externalFiles;
+
+import java.io.BufferedWriter;
+import java.io.File;
+import java.io.FileWriter;
+import java.io.IOException;
+
+public class Html {
+
+	public static void main(String[] args) throws IOException {
+		// TODO Auto-generated method stub
+		String path1 ="myData//htmlWrite.html.";
+		File f1= new File(path1);
+		FileWriter fw = new FileWriter(f1);
+		BufferedWriter bw= new BufferedWriter(fw);
+		
+		bw.write("<html>");
+		bw.newLine();
+		bw.write("<head>");
+		bw.newLine();
+		bw.write("<title>ABC</title>");
+		bw.newLine();
+		bw.write("</head>");
+		bw.newLine();
+		bw.write("<body>");
+		bw.newLine();
+		bw.write("<p>Hello,</p>");
+		bw.newLine();
+		bw.write("</body>");
+		bw.newLine();
+		bw.write("</html>");
+		bw.newLine();
+		bw.close();
+
+	}
+
+}
